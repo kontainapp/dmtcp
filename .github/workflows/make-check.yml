@@ -23,7 +23,7 @@ jobs:
     - name: install missing programs for tests
       run: |
         sudo apt-get update
-        sudo apt-get emacs screen tcsh zsh
+        sudo apt-get install emacs screen tcsh zsh
     - name: configure
       run: ./configure
     - name: make
