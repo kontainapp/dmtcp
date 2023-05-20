@@ -31,6 +31,6 @@ jobs:
     - name: make tests
       run: make tests
     - name: display test configuration
-      cat test/autotest_config.py
+      run: cat test/autotest_config.py
     - name: run tests
       run: ./test/autotest.py --retry-once
